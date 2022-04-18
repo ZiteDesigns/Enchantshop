@@ -20,8 +20,8 @@ class EnchantShop extends PluginBase {
     public static function getData(): Config {
         return EnchantShop::getInstance()->getConfig();
     }
-    
-    public function getMoney($player): void {
+
+    public function getMoney($player) {
         BedrockEconomyAPI::legacy()->getPlayerBalance(
     		"$player",
     		ClosureContext::create(
@@ -32,8 +32,8 @@ class EnchantShop extends PluginBase {
 		);
         return $balance;
     }
-    
-    public function reduceMoney($player, $cost): void {
+
+    public function reduceMoney($player, $cost) {
         BedrockEconomyAPI::legacy()->subtractFromPlayerBalance(
             "$player",
             $cost,
