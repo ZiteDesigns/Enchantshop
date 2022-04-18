@@ -1,0 +1,37 @@
+shop:
+# - name: price
+  sword:
+    - sharpness: 10000
+    - unbreaking: 1000
+    - deathbringer: 100000
+  bow:
+    - power: 10000
+    - unbreaking: 1000
+  pickaxe:
+    - efficiency: 10000
+    - unbreaking: 1000
+  axe:
+    - efficiency: 10000
+    - unbreaking: 1000
+  hoe:
+    - efficiency: 10000
+    - unbreaking: 1000
+  shovel:
+    - efficiency: 10000
+    - unbreaking: 1000
+  helmet:
+    - protection: 10000
+    - unbreaking: 1000
+  chestplate:
+    - protection: 10000
+    - unbreaking: 1000
+  leggings:
+    - protection: 10000
+    - unbreaking: 1000
+  boots:
+    - protection: 10000
+    - unbreaking: 1000
+  misc:
+    - radar: 1000000
+
+
