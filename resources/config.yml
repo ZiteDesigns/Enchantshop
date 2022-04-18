@@ -1,37 +1,35 @@
 shop:
-# - name: price
+# - name: price:::description
   sword:
-    - sharpness: 10000
-    - unbreaking: 1000
-    - deathbringer: 100000
+    - sharpness: 10000:::"deal more damage to player"
+    - unbreaking: 1000:::"items have more durability"
+    - deathbringer: 100000:::"multiplys your damage"
   bow:
-    - power: 10000
-    - unbreaking: 1000
+    - power: 10000:::"more power ful"
+    - unbreaking: 1000:::"items have more durability"
   pickaxe:
-    - efficiency: 10000
-    - unbreaking: 1000
+    - efficiency: 10000:::"mine faster"
+    - unbreaking: 1000:::"items have more durability"
   axe:
-    - efficiency: 10000
-    - unbreaking: 1000
+    - efficiency: 10000:::"mine faster"
+    - unbreaking: 1000:::"items have more durability"
   hoe:
-    - efficiency: 10000
-    - unbreaking: 1000
+    - efficiency: 10000:::"mine faster"
+    - unbreaking: 1000:::"items have more durability"
   shovel:
-    - efficiency: 10000
-    - unbreaking: 1000
+    - efficiency: 10000:::"mine faster"
+    - unbreaking: 1000:::"items have more durability"
   helmet:
-    - protection: 10000
-    - unbreaking: 1000
+    - protection: 10000:::"less damage gets taken"
+    - unbreaking: 1000:::"items have more durability"
   chestplate:
-    - protection: 10000
-    - unbreaking: 1000
+    - protection: 10000:::"less damage gets taken"
+    - unbreaking: 1000:::"items have more durability"
   leggings:
-    - protection: 10000
-    - unbreaking: 1000
+    - protection: 10000:::"less damage gets taken"
+    - unbreaking: 1000:::"items have more durability"
   boots:
-    - protection: 10000
-    - unbreaking: 1000
+    - protection: 10000:::"less damage gets taken"
+    - unbreaking: 1000:::"items have more durability"
   misc:
     - radar: 1000000
-
-

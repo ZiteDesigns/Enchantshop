@@ -85,11 +85,12 @@ class ESForm {
             new BuyConfirmationForm($player, $data);
         });
         $form->setTitle(C::RED . "★ " . C::GOLD . "Enchantment Shop" . C::RED . " ★");
-        $form->setContent(C::GREEN . "Each enchantment is raised by 3% per level !!! 
+        $form->setContent(C::GREEN . "Each enchantment is raised by 3% per level !!!
 Credits to ZiteDesigns for this form!");
         foreach(EnchantShop::getData()->get("shop")[$type] as $key => $enchantData) {
-            foreach($enchantData as $enchantName => $baseCost) {
-                $form->addButton(C::RED . "★ " . C::AQUA . $enchantName . "\n" . C::GRAY . "Cost: $$baseCost" . C::RED . " ★", -1, "", "$enchantName:$baseCost");
+            foreach($enchantData as $enchantName => $baseinfo) {
+                $info = explode(":::", $baseinfo);
+                $form->addButton(C::RED . "★ " . C::DARK_RED . $enchantName . "" . C::GRAY . "Cost: $" . $info[0] . C::RED . " ★\n" . C::BLACK . $info[1], -1, "", "$enchantName:$baseCost");
             }
         }
         $sender->sendForm($form);
