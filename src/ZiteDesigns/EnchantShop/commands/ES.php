@@ -8,7 +8,8 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as C;
-use ZiteDesigns\EnchantShop\forms\EnchantShopForm;
+use ZiteDesigns\EnchantShop\forms\ESNormalForm;
+use ZiteDesigns\EnchantShop\forms\ESBarForm;
 
 class ES extends Command {
 
@@ -26,7 +27,12 @@ class ES extends Command {
             $sender->sendMessage(C::YELLOW . "You are not a authorized player");
             return;
         }
+        EnchantShop::getData()->get("shop")[shop-ui-type] as $key => $type;
+        if ($type === "normal"){
+            new ESNormalForm($sender);
 
-        new ESForm($sender);
+        }else{
+            new ESBarForm($sender)
+        }
     }
 }

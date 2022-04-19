@@ -11,17 +11,17 @@ use pocketmine\item\enchantment\EnchantmentInstance;
 use pocketmine\item\enchantment\StringToEnchantmentParser;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as C;
-use ZiteDesigns\EnchantShop\libs\FormsUI\SimpleForm;
+use ZiteDesigns\EnchantShop\libs\FormsUI\CustomForm;
 use ZiteDesigns\EnchantShop\EnchantShop;
 
-class BuyConfirmationForm {
+class BuyConfirmationESBarForm {
 
     public function __construct(Player $player, string $data) {
-        $form = new SimpleForm(function (Player $player, string $return = null) use ($data) {
+        $form = new CustomForm(function (Player $player, string $return = null) use ($data) {
             if($return === null)
                 return;
 
-            if($return === "confirm"){
+            if($return === "labelinput"){
 
                 $data = explode(":", $data);
                 $enchantName = $data[0];
@@ -55,12 +55,12 @@ class BuyConfirmationForm {
                 }
 
                 EnchantShop::reduceMoney($player, $cost);
-               
+
             	if (!Utils::itemMatchesItemType($item, $enchant->getItemType())) {
                 	$sender->sendMessage(C::RED . "You Switched slots to quick for me!");
                 	return;
             	}elseif (Utils::itemMatchesItemType($item, $enchant->getItemType())) {
-            	
+
                 	$item->addEnchantment(new EnchantmentInstance($enchant, $newLevel));
                 }
                 if($setLore) {
@@ -82,8 +82,7 @@ class BuyConfirmationForm {
             }
         });
         $form->setTitle(C::RED . "★ " . C::GOLD . "Enchant Shop" . C::RED . " ★");
-        $form->addButton(C::GREEN . "Confirm", -1, "", "confirm");
-        $form->addButton(C::RED . "Cancel", -1, "", "cancel");
+        $form->addInput(C::GREEN . "Confirm" . C::GRAY . " / " . C::RED . "Cancel", C::RED . "Cancel", C::RED . "Cancel", "labelinput");
         $player->sendForm($form);
         return $form;
     }

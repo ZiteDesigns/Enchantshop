@@ -82,7 +82,7 @@ class ESForm {
             if($data === null)
                 return;
 
-            new BuyConfirmationESForm($player, $data);
+            new BuyConfirmationESBarForm($player, $data);
         });
         $form->setTitle(C::RED . "★ " . C::GOLD . "Enchantment Shop" . C::RED . " ★");
         $form->setContent(C::GREEN . "Each enchantment is raised by 3% per level !!!

@@ -1,35 +1,69 @@
 shop:
-# - name: price:::description
+  shop-ui-type: normal #normal, bar verison - creditsMrBlasyMSK#3838 for the idea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# - name: price:::description:::Maxlevel
+
+
   sword:
-    - sharpness: 10000:::"deal more damage to player"
-    - unbreaking: 1000:::"items have more durability"
-    - deathbringer: 100000:::"multiplys your damage"
+    - sharpness: 10000:::"deal more damage to player:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
+    - deathbringer: 100000:::"multiplys your damage:::5"
   bow:
-    - power: 10000:::"more power ful"
-    - unbreaking: 1000:::"items have more durability"
+    - power: 10000:::"more power ful:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   pickaxe:
-    - efficiency: 10000:::"mine faster"
-    - unbreaking: 1000:::"items have more durability"
+    - efficiency: 10000:::"mine faster:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   axe:
-    - efficiency: 10000:::"mine faster"
-    - unbreaking: 1000:::"items have more durability"
+    - efficiency: 10000:::"mine faster:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   hoe:
-    - efficiency: 10000:::"mine faster"
-    - unbreaking: 1000:::"items have more durability"
+    - efficiency: 10000:::"mine faster:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   shovel:
-    - efficiency: 10000:::"mine faster"
-    - unbreaking: 1000:::"items have more durability"
+    - efficiency: 10000:::"mine faster:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   helmet:
-    - protection: 10000:::"less damage gets taken"
-    - unbreaking: 1000:::"items have more durability"
+    - protection: 10000:::"less damage gets taken:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   chestplate:
-    - protection: 10000:::"less damage gets taken"
-    - unbreaking: 1000:::"items have more durability"
+    - protection: 10000:::"less damage gets taken:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   leggings:
-    - protection: 10000:::"less damage gets taken"
-    - unbreaking: 1000:::"items have more durability"
+    - protection: 10000:::"less damage gets taken:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   boots:
-    - protection: 10000:::"less damage gets taken"
-    - unbreaking: 1000:::"items have more durability"
+    - protection: 10000:::"less damage gets taken:::5"
+    - unbreaking: 1000:::"items have more durability:::5"
   misc:
-    - radar: 1000000
+    - radar: 1000000:::"items have more durability:::5"
