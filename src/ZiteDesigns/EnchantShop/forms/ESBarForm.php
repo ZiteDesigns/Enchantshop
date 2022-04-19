@@ -17,7 +17,7 @@ use pocketmine\utils\TextFormat as C;
 use ZiteDesigns\EnchantShop\EnchantShop;
 use ZiteDesigns\EnchantShop\libs\FormsUI\SimpleForm;
 
-class ESForm {
+class ESBarForm {
 
     const CATEGORIES = [
         Sword::class => "sword",
