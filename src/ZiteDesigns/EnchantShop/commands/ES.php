@@ -32,7 +32,7 @@ class ES extends Command {
                 new ESNormalForm($sender);
 
                 }else{
-                    new ESBarForm($sender)
+                    new ESBarForm($sender);
                 }
             }
         }
