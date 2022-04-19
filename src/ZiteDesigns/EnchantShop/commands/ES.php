@@ -27,12 +27,13 @@ class ES extends Command {
             $sender->sendMessage(C::YELLOW . "You are not a authorized player");
             return;
         }
-        EnchantShop::getData()->get("shop")[shop-ui-type] as $key => $type;
-        if ($type === "normal"){
-            new ESNormalForm($sender);
+        foreach(EnchantShop::getData()->get("shop")["shop-ui-type"] as $type){
+            if ($type === "normal"){
+                new ESNormalForm($sender);
 
-        }else{
-            new ESBarForm($sender)
-        }
-    }
-}
+                }else{
+                    new ESBarForm($sender)
+                  }
+                }
+              }
+            }
