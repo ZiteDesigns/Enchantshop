@@ -33,7 +33,7 @@ class ES extends Command {
 
                 }else{
                     new ESBarForm($sender)
-                  }
                 }
-              }
             }
+        }
+    }
