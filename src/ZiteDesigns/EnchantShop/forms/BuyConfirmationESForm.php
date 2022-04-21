@@ -35,8 +35,7 @@ class BuyConfirmationESForm {
                 } elseif(StringToEnchantmentParser::getInstance()->parse($enchantName) !== null) {
                     $enchant = StringToEnchantmentParser::getInstance()->parse($enchantName);
                 }
-
-                if($item->hasEnchantment($enchant->getId())) {
+            	if($item->hasEnchantment(EnchantmentIdMap::getInstance()->fromId($enchant->getId()))) {
                     $level = $item->getEnchantment($enchant->getId())->getLevel();
                     $newLevel = $level + 1;
                     if($newLevel > $enchant->getMaxLevel()) {
@@ -61,7 +60,7 @@ class BuyConfirmationESForm {
                 	return;
             	}elseif (Utils::itemMatchesItemType($item, $enchant->getItemType())) {
 
-                	$item->addEnchantment(new EnchantmentInstance($enchant, $newLevel));
+                	$item->addEnchantment(new EnchantmentInstance((EnchantmentIdMap::getInstance()->fromId($enchant->getId())), $newlevel));
                 }
                 if($setLore) {
                     $enchants = [];

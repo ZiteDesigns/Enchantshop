@@ -90,7 +90,7 @@ Credits to ZiteDesigns for this form!");
         foreach(EnchantShop::getData()->get("shop")[$type] as $key => $enchantData) {
             foreach($enchantData as $enchantName => $baseinfo) {
                 $info = explode(":::", $baseinfo);
-                $form->addButton(C::RED . "★ " . C::DARK_RED . $enchantName . "" . C::GRAY . "Cost: $" . $info[0] . C::RED . " ★\n" . C::BLACK . $info[1], -1, "", "$enchantName:$baseCost");
+                $form->addButton(C::RED . "★ " . C::DARK_RED . $enchantName . "" . C::GRAY . "Cost: $" . $info[0] . C::RED . " ★\n" . C::BLACK . $info[1], -1, "", "$enchantName:" . $info[0]);
             }
         }
         $sender->sendForm($form);
