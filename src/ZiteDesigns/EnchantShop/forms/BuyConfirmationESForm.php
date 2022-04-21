@@ -80,7 +80,7 @@ class BuyConfirmationESForm {
                 $player->sendMessage(C::GREEN . "Purchased enchant $enchantName of lvl $newLevel for $$cost");
             }
         });
-        $form->setTitle(C::RED . "★ " . C::GOLD . "Enchant Shop" . C::RED . " ★");
+        $form->setTitle(C::RED . "★ " . C::GOLD . "Enchantment Shop" . C::RED . " ★");
         $form->addButton(C::GREEN . "Confirm", -1, "", "confirm");
         $form->addButton(C::RED . "Cancel", -1, "", "cancel");
         $player->sendForm($form);
